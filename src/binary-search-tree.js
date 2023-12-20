@@ -1,15 +1,19 @@
 const { NotImplementedError } = require('../extensions/index.js');
 
-// const { Node } = require('../extensions/list-tree.js');
+const { Node } = require('../extensions/list-tree.js');
 
 /**
 * Implement simple binary search tree according to task description
 * using Node from extensions
 */
 class BinarySearchTree {
+  constructor() { this._root = null; }
+  // устанавливается начальное значение корневого узла дерева на null
 
   root() {
-    throw new NotImplementedError('Not implemented');
+    // throw new NotImplementedError('Not implemented');
+    return this._root;
+    // возвращает текущий корневой узел дерева
   }
 
   add(/* data */) {
